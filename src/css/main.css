@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/**************************************
+***** Colors
+***************************************/
+/**************************************
+***** Typography
+***************************************/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+  font-size: 1.6rem; }
+
+/**************************************
+***** BUTTONS
+***************************************/
+/**************************************
+***** Icons
+***************************************/
+/**************************************
+***** BASE
+***************************************/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }

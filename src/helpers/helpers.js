@@ -14,7 +14,7 @@ export const inputLabels = {
 	},
 	phone: {
 		name: 'Phone number',
-		type: 'number'
+		type: 'text'
 	},
 	password: {
 		name: 'Password',

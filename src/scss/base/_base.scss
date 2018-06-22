@@ -17,3 +17,11 @@ html {
 body {
 	box-sizing: border-box;
 }
+
+.container {
+	height: 100vh;
+	background-image: url('../img/background/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include flexCenter;
+}

@@ -15,7 +15,17 @@ body {
   font-size: 1.6rem; }
 
 .heading-second {
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 3.5rem; }
+  .heading-second:after {
+    display: block;
+    content: '';
+    height: 0.2rem;
+    width: 4rem;
+    margin: 0 auto;
+    background-color: #0066ff;
+    margin-top: 0.5rem; }
 
 /**************************************
 ***** BUTTONS
@@ -40,7 +50,8 @@ body {
   box-sizing: border-box; }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 2rem 1rem;
   background-image: url("../img/background/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,8 +61,11 @@ body {
 
 .form {
   background-color: #fff;
-  box-shadow: 0 15px 38px rgba(76, 81, 104, 0.425);
+  box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
   color: #3d4652;
-  padding: 3rem 4rem;
+  padding: 4.5rem 4rem;
   border-radius: 0.8rem;
-  max-width: 90rem; }
+  width: 50rem;
+  text-align: center; }
+  .form__content {
+    margin-bottom: 3rem; }

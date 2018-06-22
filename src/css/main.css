@@ -17,7 +17,8 @@ body {
 .heading-second {
   font-weight: 300;
   text-align: center;
-  margin-bottom: 3.5rem; }
+  margin-bottom: 3.5rem;
+  color: #3d4652; }
   .heading-second:after {
     display: block;
     content: '';
@@ -62,7 +63,6 @@ body {
 .form {
   background-color: #fff;
   box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
-  color: #3d4652;
   padding: 4.5rem 4rem;
   border-radius: 0.8rem;
   width: 50rem;

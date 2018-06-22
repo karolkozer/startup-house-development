@@ -11,7 +11,11 @@ body {
   font-weight: 300;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
+  color: #fff;
   font-size: 1.6rem; }
+
+.heading-second {
+  font-weight: 300; }
 
 /**************************************
 ***** BUTTONS
@@ -34,3 +38,20 @@ html {
 
 body {
   box-sizing: border-box; }
+
+.container {
+  height: 100vh;
+  background-image: url("../img/background/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 15px 38px rgba(76, 81, 104, 0.425);
+  color: #3d4652;
+  padding: 3rem 4rem;
+  border-radius: 0.8rem;
+  max-width: 90rem; }

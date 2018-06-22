@@ -2,41 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import { TextField, Button } from '@material-ui/core';
-import { inputLabels, colors } from '../helpers/helpers';
-
-const styles = (theme) => ({
-	label: {
-		fontSize: 18,
-		color: colors.color_blue
-	},
-	input: {
-		fontSize: 16
-	},
-	underline: {
-		'&:after': {
-			borderBottomColor: colors.color_blue
-		}
-	},
-	button: {
-		fontSize: 14,
-		fontWeight: 400,
-		backgroundColor: colors.color_blue,
-		borderRadius: 20,
-		padding: '1rem 5rem',
-		color: colors.color_white,
-		'&:hover': {
-			color: colors.color_blue,
-			backgroundColor: colors.color_white
-		}
-	}
-});
-
-const labels = {
-	name: 'Name',
-	email: 'Email',
-	phone: 'Phone number (+48 or 001)',
-	password: 'Password'
-};
+import { inputLabels, styles } from '../helpers/helpers';
 
 class Form extends React.Component {
 	state = {

@@ -19,7 +19,8 @@ body {
 }
 
 .container {
-	height: 100vh;
+	min-height: 100vh;
+	padding: 2rem 1rem;
 	background-image: url('../img/background/bg.png');
 	background-size: cover;
 	background-repeat: no-repeat;

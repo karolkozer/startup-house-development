@@ -7,7 +7,9 @@ export default class App extends React.Component {
 	render() {
 		return (
 			<div className="container">
-				<Form />
+				<main className="main">
+					<Form />
+				</main>
 			</div>
 		);
 	}

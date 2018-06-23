@@ -17,6 +17,7 @@ class Form extends React.Component {
 				<h2 className="heading-second">Sign Up</h2>
 				<div className="form__fields">
 					<TextField
+						autoComplete="disabled"
 						id="name"
 						name="name"
 						label="Name"
@@ -24,7 +25,14 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
-						autoComplete="disabled"
+						InputProps={{
+							classes: {
+								underline: classes.underline
+							}
+						}}
+						InputLabelProps={{
+							className: classes.label
+						}}
 					/>
 					<TextField
 						id="email"
@@ -35,6 +43,14 @@ class Form extends React.Component {
 						required
 						fullWidth={true}
 						autoComplete="disabled"
+						InputProps={{
+							classes: {
+								underline: classes.underline
+							}
+						}}
+						InputLabelProps={{
+							className: classes.label
+						}}
 					/>
 					<TextField
 						id="phone"
@@ -45,6 +61,14 @@ class Form extends React.Component {
 						required
 						fullWidth={true}
 						autoComplete="disabled"
+						InputProps={{
+							classes: {
+								underline: classes.underline
+							}
+						}}
+						InputLabelProps={{
+							className: classes.label
+						}}
 					/>
 					<TextField
 						id="password"
@@ -55,6 +79,14 @@ class Form extends React.Component {
 						required
 						fullWidth={true}
 						autoComplete="disabled"
+						InputProps={{
+							classes: {
+								underline: classes.underline
+							}
+						}}
+						InputLabelProps={{
+							className: classes.label
+						}}
 					/>
 				</div>
 				<Button

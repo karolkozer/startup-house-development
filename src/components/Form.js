@@ -96,8 +96,11 @@ class Form extends React.Component {
 			this.setState({ error });
 		}
 
+		// If form is valid
 		if (formIsValid) {
+			// Change the state
 			this.props.formIsValid();
+			// Reset the from
 			e.currentTarget.reset();
 		}
 	};

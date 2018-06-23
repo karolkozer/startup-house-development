@@ -5,7 +5,7 @@
 This project was made for the company "Startup Development House.
 The project is a registration form for website users. The registration form contains all the fields needed for registration, such as name, email, website and password. In addition, the form has validation of all information needed to register a given user of the website.
 
-#Contact:
+Contact:
 email: karol.kozer@gmail.com
 
 ### The project includes:

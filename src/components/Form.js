@@ -7,7 +7,8 @@ import { styles } from '../helpers/helpers';
 
 class Form extends React.Component {
 	context = {
-		classes: PropTypes.object.isRequired
+		classes: PropTypes.object.isRequired,
+		formIsValid: PropTypes.func
 	};
 
 	state = {
@@ -96,6 +97,7 @@ class Form extends React.Component {
 		}
 
 		if (formIsValid) {
+			this.props.formIsValid();
 			e.currentTarget.reset();
 		}
 	};

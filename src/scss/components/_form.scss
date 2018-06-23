@@ -1,12 +1,12 @@
 .form {
 	background-color: $white;
 	box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
-	padding: 4.5rem 4rem;
+	padding: 4rem 3.5rem;
 	border-radius: 0.8rem;
-	width: 50rem;
+	width: 30rem;
 	text-align: center;
 
-	&__content {
-		margin-bottom: 3rem;
+	&__fields {
+		margin-bottom: 2rem;
 	}
 }

@@ -15,5 +15,14 @@ export const styles = (theme) => ({
 	textfield: {
 		color: blue[700],
 		borderColor: blue[700]
+	},
+	label: {
+		// fontSize: 18,
+		color: blue[800]
+	},
+	underline: {
+		'&:after': {
+			borderBottomColor: blue[700]
+		}
 	}
 });

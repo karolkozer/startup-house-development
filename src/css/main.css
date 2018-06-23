@@ -11,7 +11,21 @@ body {
   font-weight: 300;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
-  font-size: 1.6rem; }
+  color: #fff; }
+
+.heading-second {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #3d4652; }
+  .heading-second:after {
+    display: block;
+    content: '';
+    height: 0.14rem;
+    width: 3rem;
+    margin: 0 auto;
+    background-color: #0066ff;
+    margin-top: 0.5rem; }
 
 /**************************************
 ***** BUTTONS
@@ -29,8 +43,26 @@ body {
   margin: 0;
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   box-sizing: border-box; }
+
+.container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background-image: url("../img/background/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; }
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
+  padding: 4rem 3.5rem;
+  border-radius: 0.8rem;
+  width: 30rem;
+  text-align: center; }
+  .form__fields {
+    margin-bottom: 2rem; }

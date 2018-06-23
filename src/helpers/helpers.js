@@ -17,7 +17,6 @@ export const styles = (theme) => ({
 		borderColor: blue[700]
 	},
 	label: {
-		// fontSize: 18,
 		color: blue[800]
 	},
 	underline: {

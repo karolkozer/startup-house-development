@@ -63,19 +63,19 @@ class Form extends React.Component {
 		// Set password Regex
 		const passwordRegex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/g;
 
-		if (!nameRegex.test(name) && name.length !== 0) {
+		if (!nameRegex.test(name)) {
 			// Check if the name does not include any numbers
 			formIsValid = !formIsValid;
 			// Change error state
 			error.error_name.isError = true;
 			this.setState({ error });
-		} else if (!emailRegex.test(email) && email.length !== 0) {
+		} else if (!emailRegex.test(email)) {
 			// Check the email format
 			formIsValid = !formIsValid;
 			// Change error state
 			error.error_email.isError = true;
 			this.setState({ error });
-		} else if (!urlRegex.test(website) && website.length !== 0) {
+		} else if (!urlRegex.test(website)) {
 			// Check the url format
 			formIsValid = !formIsValid;
 			// Change error state

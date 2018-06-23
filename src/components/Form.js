@@ -10,14 +10,20 @@ class Form extends React.Component {
 		classes: PropTypes.object.isRequired
 	};
 
+	handleForm = (e) => {
+		e.preventDefault();
+		console.log('submited');
+		e.currentTarget.reset();
+	};
+
 	render() {
 		const { classes } = this.props;
 		return (
-			<form className="form">
+			<form className="form" onSubmit={this.handleForm}>
 				<h2 className="heading-second">Sign Up</h2>
 				<div className="form__fields">
 					<TextField
-						autoComplete="disabled"
+						autoComplete="off"
 						id="name"
 						name="name"
 						label="Name"
@@ -42,7 +48,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
-						autoComplete="disabled"
+						autoComplete="off"
 						InputProps={{
 							classes: {
 								underline: classes.underline
@@ -60,7 +66,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
-						autoComplete="disabled"
+						autoComplete="off"
 						InputProps={{
 							classes: {
 								underline: classes.underline
@@ -76,9 +82,10 @@ class Form extends React.Component {
 						label="Password"
 						type="password"
 						margin="normal"
+						helperText="Password 8 length"
 						required
 						fullWidth={true}
-						autoComplete="disabled"
+						autoComplete="off"
 						InputProps={{
 							classes: {
 								underline: classes.underline
@@ -94,6 +101,7 @@ class Form extends React.Component {
 					size="large"
 					color="primary"
 					className={classes.button}
+					type="submit"
 				>
 					Send
 				</Button>

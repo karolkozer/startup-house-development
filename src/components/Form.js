@@ -59,11 +59,12 @@ class Form extends React.Component {
 						}}
 					/>
 					<TextField
-						id="phone"
-						name="phone"
-						label="Phone number"
-						type="text"
+						id="website"
+						name="website"
+						label="Website"
+						type="url"
 						margin="normal"
+						helperText="Please add link to your projects"
 						required
 						fullWidth={true}
 						autoComplete="off"

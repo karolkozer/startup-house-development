@@ -6,6 +6,18 @@
 	width: 30rem;
 	text-align: center;
 
+	@include media(32.5em) {
+		width: 25rem;
+	}
+	@include media(25em) {
+		width: 20rem;
+		padding: 4rem 2rem;
+	}
+	@include media(21.25em) {
+		width: 18rem;
+		padding: 2.5rem 2rem;
+	}
+
 	&__fields {
 		margin-bottom: 2rem;
 	}

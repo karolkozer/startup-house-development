@@ -24,6 +24,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
+						autoComplete="disabled"
 					/>
 					<TextField
 						id="email"
@@ -33,6 +34,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
+						autoComplete="disabled"
 					/>
 					<TextField
 						id="phone"
@@ -42,6 +44,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
+						autoComplete="disabled"
 					/>
 					<TextField
 						id="password"
@@ -51,6 +54,7 @@ class Form extends React.Component {
 						margin="normal"
 						required
 						fullWidth={true}
+						autoComplete="disabled"
 					/>
 				</div>
 				<Button

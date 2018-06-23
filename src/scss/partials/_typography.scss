@@ -7,20 +7,19 @@ body {
 	line-height: 1.7;
 	text-rendering: optimizeLegibility;
 	color: $white;
-	font-size: 1.6rem;
 }
 
 .heading-second {
 	font-weight: 300;
 	text-align: center;
-	margin-bottom: 3.5rem;
+	margin-bottom: 1rem;
 	color: $black;
 
 	&:after {
 		display: block;
 		content: '';
-		height: 0.2rem;
-		width: 4rem;
+		height: 0.14rem;
+		width: 3rem;
 		margin: 0 auto;
 		background-color: $blue;
 		margin-top: 0.5rem;

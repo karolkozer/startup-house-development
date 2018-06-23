@@ -21,4 +21,5 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	@include flexCenter;
+	overflow-x: hidden;
 }

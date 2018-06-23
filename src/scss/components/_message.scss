@@ -1,0 +1,4 @@
+.message {
+	@include flexColumnCenter;
+	animation: fadeIn 1s 0.3s backwards;
+}

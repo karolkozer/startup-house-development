@@ -30,13 +30,19 @@ body {
     display: block;
     content: '';
     height: 0.14rem;
-    width: 3rem;
+    width: 2.6rem;
     margin: 0 auto;
     background-color: #0066ff;
     margin-top: 0.5rem; }
 
 .message__description {
   font-size: 1.6rem; }
+  @media only screen and (max-width: 25em) {
+    .message__description {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .message__description {
+      font-size: 1.2rem; } }
 
 /**************************************
 ***** BUTTONS
@@ -67,6 +73,15 @@ body {
   justify-content: center;
   align-items: center;
   overflow-x: hidden; }
+  @media only screen and (max-width: 64em) {
+    .container {
+      background-image: url("../img/background/bg-desktop.png"); } }
+  @media only screen and (max-width: 48em) {
+    .container {
+      background-image: url("../img/background/bg-tablet.png"); } }
+  @media only screen and (max-width: 30em) {
+    .container {
+      background-image: url("../img/background/bg-mobile.png"); } }
 
 .form {
   background-color: #fff;
@@ -75,6 +90,17 @@ body {
   border-radius: 0.8rem;
   width: 30rem;
   text-align: center; }
+  @media only screen and (max-width: 32.5em) {
+    .form {
+      width: 25rem; } }
+  @media only screen and (max-width: 25em) {
+    .form {
+      width: 20rem;
+      padding: 4rem 2rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .form {
+      width: 18rem;
+      padding: 2.5rem 2rem; } }
   .form__fields {
     margin-bottom: 2rem; }
 

@@ -93,10 +93,14 @@ body {
   @media only screen and (max-width: 32.5em) {
     .form {
       width: 25rem; } }
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 26.87em) {
+    .form {
+      width: 22rem;
+      padding: 4rem 2rem; } }
+  @media only screen and (max-width: 24em) {
     .form {
       width: 20rem;
-      padding: 4rem 2rem; } }
+      padding: 3rem 2rem; } }
   @media only screen and (max-width: 21.25em) {
     .form {
       width: 18rem;

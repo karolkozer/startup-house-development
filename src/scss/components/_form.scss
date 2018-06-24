@@ -9,9 +9,13 @@
 	@include media(32.5em) {
 		width: 25rem;
 	}
-	@include media(25em) {
-		width: 20rem;
+	@include media(26.87em) {
+		width: 22rem;
 		padding: 4rem 2rem;
+	}
+	@include media(24em) {
+		width: 20rem;
+		padding: 3rem 2rem;
 	}
 	@include media(21.25em) {
 		width: 18rem;

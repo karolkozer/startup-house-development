@@ -10,10 +10,28 @@
 	box-sizing: inherit;
 }
 
-html {
-	font-size: 62.5%;
-}
-
 body {
 	box-sizing: border-box;
+}
+
+.container {
+	min-height: 100vh;
+	padding: 2rem 1rem;
+	background-image: url('../img/background/bg.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	@include flexCenter;
+	overflow-x: hidden;
+
+	@include media(64em) {
+		background-image: url('../img/background/bg-desktop.png');
+	}
+
+	@include media(48em) {
+		background-image: url('../img/background/bg-tablet.png');
+	}
+
+	@include media(30em) {
+		background-image: url('../img/background/bg-mobile.png');
+	}
 }

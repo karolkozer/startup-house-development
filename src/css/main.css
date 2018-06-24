@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
 /**************************************
 ***** Colors
 ***************************************/
@@ -11,14 +19,31 @@ body {
   font-weight: 300;
   line-height: 1.7;
   text-rendering: optimizeLegibility;
-  font-size: 1.6rem; }
+  color: #fff; }
 
-/**************************************
-***** BUTTONS
-***************************************/
-/**************************************
-***** Icons
-***************************************/
+.heading-second {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #3d4652; }
+  .heading-second:after {
+    display: block;
+    content: '';
+    height: 0.14rem;
+    width: 2.6rem;
+    margin: 0 auto;
+    background-color: #0066ff;
+    margin-top: 0.5rem; }
+
+.message__description {
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 25em) {
+    .message__description {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .message__description {
+      font-size: 1.2rem; } }
+
 /**************************************
 ***** BASE
 ***************************************/
@@ -29,8 +54,57 @@ body {
   margin: 0;
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   box-sizing: border-box; }
+
+.container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  background-image: url("../img/background/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 64em) {
+    .container {
+      background-image: url("../img/background/bg-desktop.png"); } }
+  @media only screen and (max-width: 48em) {
+    .container {
+      background-image: url("../img/background/bg-tablet.png"); } }
+  @media only screen and (max-width: 30em) {
+    .container {
+      background-image: url("../img/background/bg-mobile.png"); } }
+
+.form {
+  background-color: #fff;
+  box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
+  padding: 4rem 3.5rem;
+  border-radius: 0.8rem;
+  width: 30rem;
+  text-align: center; }
+  @media only screen and (max-width: 32.5em) {
+    .form {
+      width: 25rem; } }
+  @media only screen and (max-width: 26.87em) {
+    .form {
+      width: 22rem;
+      padding: 4rem 2rem; } }
+  @media only screen and (max-width: 24em) {
+    .form {
+      width: 20rem;
+      padding: 3rem 2rem; } }
+  @media only screen and (max-width: 21.25em) {
+    .form {
+      width: 18rem;
+      padding: 2.5rem 2rem; } }
+  .form__fields {
+    margin-bottom: 2rem; }
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s 0.3s backwards; }

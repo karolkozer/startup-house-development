@@ -1,0 +1,28 @@
+.form {
+	background-color: $white;
+	box-shadow: 0 15px 38px rgba(76, 81, 104, 0.548);
+	padding: 4rem 3.5rem;
+	border-radius: 0.8rem;
+	width: 30rem;
+	text-align: center;
+
+	@include media(32.5em) {
+		width: 25rem;
+	}
+	@include media(26.87em) {
+		width: 22rem;
+		padding: 4rem 2rem;
+	}
+	@include media(24em) {
+		width: 20rem;
+		padding: 3rem 2rem;
+	}
+	@include media(21.25em) {
+		width: 18rem;
+		padding: 2.5rem 2rem;
+	}
+
+	&__fields {
+		margin-bottom: 2rem;
+	}
+}

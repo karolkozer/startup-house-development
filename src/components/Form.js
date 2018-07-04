@@ -4,10 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { styles } from '../helpers/helpers';
 
 // Import components
-import InputName from './Input_Name';
-import InputEmail from './Input_Email';
-import InputPassword from './Input_Password';
-import InputWebsite from './Input_Website';
+import FormInputs from './Form_Inputs';
 import ButtonSubmit from './Button_Submit';
 
 class Form extends React.Component {
@@ -108,32 +105,14 @@ class Form extends React.Component {
 
 	render() {
 		const { classes } = this.props;
-		const error = { ...this.state.error };
-		const { name, email, website, password } = { ...this.state.fields };
+		const fields = this.state.fields;
+		const error = this.state.error;
 		return (
 			<form className="form" onSubmit={this.handleValidation}>
 				<h2 className="heading-second">Sign Up</h2>
 				<div className="form__fields">
-					<InputName
-						value={name}
-						error={error}
-						classes={classes}
-						change={this.handleChange}
-					/>
-					<InputEmail
-						value={email}
-						error={error}
-						classes={classes}
-						change={this.handleChange}
-					/>
-					<InputWebsite
-						value={website}
-						error={error}
-						classes={classes}
-						change={this.handleChange}
-					/>
-					<InputPassword
-						value={password}
+					<FormInputs
+						fields={fields}
 						error={error}
 						classes={classes}
 						change={this.handleChange}
